@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.CourseMapper">
+
+    <resultMap id="BaseResultMap" type="generator.domain.Course">
+            <id property="courseid" column="courseID" jdbcType="INTEGER"/>
+            <result property="coursename" column="courseName" jdbcType="VARCHAR"/>
+            <result property="teacherid" column="teacherID" jdbcType="INTEGER"/>
+            <result property="coursetime" column="courseTime" jdbcType="VARCHAR"/>
+            <result property="classroom" column="classRoom" jdbcType="VARCHAR"/>
+            <result property="courseweek" column="courseWeek" jdbcType="INTEGER"/>
+            <result property="coursetype" column="courseType" jdbcType="VARCHAR"/>
+            <result property="collegeid" column="collegeID" jdbcType="INTEGER"/>
+            <result property="score" column="score" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="is_delete" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        courseID,courseName,teacherID,
+        courseTime,classRoom,courseWeek,
+        courseType,collegeID,score,
+        create_time,update_time,is_delete
+    </sql>
+</mapper>
